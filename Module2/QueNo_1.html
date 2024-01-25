@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid black;
+            background-color: antiquewhite;
+            width: 400px;
+            padding: 20px 20px 20px 40px;
+        }
+    </style>
+</head>
+<body>
+    <!--1. Display the web page with “USER INFORMATION” as heading using the <h1> tag and
+          include the following fields as the form fields:
+           »First Name
+            »Last Name
+           »Address
+          »Email ID
+          »date of birth -Use date field-->
+
+          <h1>USER INFORMATION</h1>
+
+          <form>
+            <label> First Name:
+                <input name="First_name" type="text" />
+            </label>
+            <br>
+            <br>
+            <label> Last Name:
+                <input name="Last_name" type="text" />
+            </label>
+            <br>
+            <br>
+            <label> Address:
+            </label>
+            <br>
+            <textarea name="add" cols="40" rows="3"></textarea>
+            <br>
+            <br>
+            <label> Email Id:
+                <input name="Email" type="email" />
+            </label>
+            <br>
+            <br>
+            <label> DOB:
+                <input name="dob" type="date" />
+            </label>
+            <br>
+            <br>
+            <input type="submit"/>
+          </form>
+          
+</body>
+</html>

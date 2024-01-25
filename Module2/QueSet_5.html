@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Write HTML script to store your first name, last name and date of birth as part of web storage and display the stored local storage content by retrieving it-->
+    <div id="first name"></div>
+    <div id="last name"></div>
+    <div id="date of birth"></div>
+
+    <script>
+        if (typeof(Storage) != "undefined")
+        { 
+        localStorage.setItem("first name","Mansi");
+        document.getElementById("first name").innerHTML=localStorage.getItem("first name")
+        localStorage.setItem("last name","Krishnapurkar");
+        document.getElementById("last name").innerHTML=localStorage.getItem("last name")
+        localStorage.setItem("date of birth","24/02/2002");
+        document.getElementById("date of birth").innerHTML=localStorage.getItem("date of birth")
+       }
+        else{
+        document.getElementById("first name").innerHTML=localStorage.getItem("No Browser Support")
+        document.getElementById("last name").innerHTML=localStorage.getItem("No Browser Support")
+        document.getElementById("date of birth").innerHTML=localStorage.getItem("No Browser Support")
+        }
+       
+        </script>
+</body>
+</html>
